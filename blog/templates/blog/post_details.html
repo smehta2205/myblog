@@ -1,0 +1,6 @@
+{% load staticfiles %}
+{% if post.published_date %}
+{{ post.published_date }}
+{% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
